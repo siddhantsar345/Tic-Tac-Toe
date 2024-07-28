@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "tictactoe.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "tictactoe.css",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "tictactoe.js",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      { "src": "/tictactoe.css", "dest": "/tictactoe.css" },
+      { "src": "/tictactoe.js", "dest": "/tictactoe.js" },
+      { "src": "/(.*)", "dest": "/tictactoe.html" }
+    ]
+  }
